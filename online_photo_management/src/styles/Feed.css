@@ -1,0 +1,77 @@
+/* src/styles/Feed.css */
+.feed {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.masonry-grid {
+  columns: 4;
+  column-gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  width: 100%;
+  column-span: all;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.empty-state p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Loading indicator */
+.loading-indicator {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+  column-span: all;
+}
+
+/* Error message */
+.error-message {
+  text-align: center;
+  padding: 40px;
+  color: #e60023;
+  font-size: 16px;
+  width: 100%;
+  column-span: all;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .masonry-grid {
+    columns: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    columns: 2;
+    padding: 0 8px;
+  }
+
+  .feed {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    columns: 1;
+  }
+}
